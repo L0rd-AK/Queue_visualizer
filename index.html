@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body >
+    <div class="flex justify-center items-center min-h-screen gap-5">
+        <div>
+            <div class="mb-10">
+                <h1 id="title" class="text-black font-bold text-5xl mb-5">Enter Queue size</h1>
+                <h1 id="full" class="text-red-600 font-bold text-2xl mb-5 hidden">Queue is full!!!</h1>
+                <h1 id="empty" class="text-red-600 font-bold text-2xl mb-5 hidden">Queue is Empty!!!</h1>
+                <div id="parent" class="flex justify-center items-center">
+
+                </div>
+            </div>
+            <div id="takeInputSize" class="flex gap-5">
+                <input id="input1" type="text" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs" />
+                <button onclick="inputSize()" class="btn btn-warning">Add</button>
+            </div>
+            <div id="enq_deq" class="hidden">
+                <div class="flex gap-5">
+                    <input id="enq_input" type="text" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs" />
+                    <button onclick="enqueue()"  class="btn btn-warning">Enqueue</button>
+                    <button onclick="dequeue()"  class="btn btn-warning">Dequeue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
